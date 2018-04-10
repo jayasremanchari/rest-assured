@@ -8,9 +8,9 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 7,
-  "name": "Get the customer details for the given customer id",
+  "name": "Get the customer details",
   "description": "",
-  "id": "get-action-test;get-the-customer-details-for-the-given-customer-id",
+  "id": "get-action-test;get-the-customer-details",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -22,12 +22,12 @@ formatter.scenarioOutline({
 });
 formatter.step({
   "line": 9,
-  "name": "a book exists  with a customer id of \"\u003ccustomer_id\u003e\"",
+  "name": "the api is up and running for \"http://parabank.parasoft.com/parabank/services\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 10,
-  "name": "the user retrieves the details of the customer",
+  "name": "the user performs get request to \"\u003ccustomer_id\u003e\"",
   "keyword": "When "
 });
 formatter.step({
@@ -36,37 +36,37 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.examples({
-  "line": 14,
+  "line": 13,
   "name": "",
   "description": "",
-  "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;",
+  "id": "get-action-test;get-the-customer-details;",
   "rows": [
     {
       "cells": [
         "customer_id"
       ],
-      "line": 16,
-      "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;;1"
+      "line": 14,
+      "id": "get-action-test;get-the-customer-details;;1"
     },
     {
       "cells": [
         "12212"
       ],
-      "line": 17,
-      "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;;2"
+      "line": 15,
+      "id": "get-action-test;get-the-customer-details;;2"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 585222622,
+  "duration": 439046921,
   "status": "passed"
 });
 formatter.scenario({
-  "line": 17,
-  "name": "Get the customer details for the given customer id",
+  "line": 15,
+  "name": "Get the customer details",
   "description": "",
-  "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;;2",
+  "id": "get-action-test;get-the-customer-details;;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -78,15 +78,15 @@ formatter.scenario({
 });
 formatter.step({
   "line": 9,
-  "name": "a book exists  with a customer id of \"12212\"",
-  "matchedColumns": [
-    0
-  ],
+  "name": "the api is up and running for \"http://parabank.parasoft.com/parabank/services\"",
   "keyword": "Given "
 });
 formatter.step({
   "line": 10,
-  "name": "the user retrieves the details of the customer",
+  "name": "the user performs get request to \"12212\"",
+  "matchedColumns": [
+    0
+  ],
   "keyword": "When "
 });
 formatter.step({
@@ -97,21 +97,27 @@ formatter.step({
 formatter.match({
   "arguments": [
     {
-      "val": "12212",
-      "offset": 38
+      "val": "http://parabank.parasoft.com/parabank/services",
+      "offset": 31
     }
   ],
-  "location": "Steps.a_book_exists_with_a_customer_id_of(String)"
+  "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 146128034,
+  "duration": 3056963014,
   "status": "passed"
 });
 formatter.match({
-  "location": "Steps.the_user_retrieves_the_details_of_the_customer()"
+  "arguments": [
+    {
+      "val": "12212",
+      "offset": 34
+    }
+  ],
+  "location": "Steps.the_user_performs_get_request_to(String)"
 });
 formatter.result({
-  "duration": 38626,
+  "duration": 917868754,
   "status": "passed"
 });
 formatter.match({
@@ -124,112 +130,7 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 1541373,
-  "error_message": "java.lang.NullPointerException\r\n\tat stepDefinitions.Steps.the_Status_Code_is(Steps.java:48)\r\n\tat ✽.Then the Status Code is 200(getCustDetails.feature:11)\r\n",
-  "status": "failed"
-});
-formatter.scenarioOutline({
-  "line": 20,
-  "name": "Get the customer details for the given customer id",
-  "description": "",
-  "id": "get-action-test;get-the-customer-details-for-the-given-customer-id",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@GetTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 22,
-  "name": "the user retrieves the details of the \"\u003ccustomer_id\u003e\"",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 23,
-  "name": "the Status Code is 200",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 26,
-  "name": "",
-  "description": "",
-  "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;",
-  "rows": [
-    {
-      "cells": [
-        "customer_id"
-      ],
-      "line": 28,
-      "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;;1"
-    },
-    {
-      "cells": [
-        "12212"
-      ],
-      "line": 29,
-      "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.before({
-  "duration": 1047855,
-  "status": "passed"
-});
-formatter.scenario({
-  "line": 29,
-  "name": "Get the customer details for the given customer id",
-  "description": "",
-  "id": "get-action-test;get-the-customer-details-for-the-given-customer-id;;2",
-  "type": "scenario",
-  "keyword": "Scenario Outline",
-  "tags": [
-    {
-      "line": 19,
-      "name": "@GetTest"
-    }
-  ]
-});
-formatter.step({
-  "line": 22,
-  "name": "the user retrieves the details of the \"12212\"",
-  "matchedColumns": [
-    0
-  ],
-  "keyword": "When "
-});
-formatter.step({
-  "line": 23,
-  "name": "the Status Code is 200",
-  "keyword": "Then "
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "12212",
-      "offset": 39
-    }
-  ],
-  "location": "Steps.the_user_retrieves_the_details_of_the(String)"
-});
-formatter.result({
-  "duration": 3737302059,
-  "status": "passed"
-});
-formatter.match({
-  "arguments": [
-    {
-      "val": "200",
-      "offset": 19
-    }
-  ],
-  "location": "Steps.the_Status_Code_is(int)"
-});
-formatter.result({
-  "duration": 55998576,
+  "duration": 2166799,
   "status": "passed"
 });
 });

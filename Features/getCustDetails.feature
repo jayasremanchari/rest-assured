@@ -4,29 +4,17 @@ Description: This feature will get the REST API Url and tests
 
 
 @GetTest
-Scenario Outline: Get the customer details for the given customer id
+Scenario Outline: Get the customer details 
 	
-	Given a book exists  with a customer id of "<customer_id>"
-	When the user retrieves the details of the customer  
+	Given the api is up and running for "http://parabank.parasoft.com/parabank/services"
+	When the user performs get request to "<customer_id>"   
 	Then the Status Code is 200 
 	
-	
 	Examples:
-	
 	| customer_id |
 	| 12212 |
+	
 
-@GetTest
-Scenario Outline: Get the customer details for the given customer id
-	
-	When the user retrieves the details of the "<customer_id>"  
-	Then the Status Code is 200 
-	
-	
-	Examples:
-	
-	| customer_id |
-	| 12212 |
-	
+		
 	
 	  
