@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.baseURI;
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.containsInAnyOrder;
 import static org.hamcrest.Matchers.equalTo;
+import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
 
@@ -79,8 +80,10 @@ public class Steps {
 	@When("^the user performs request with multivalue params \"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"\"([^\"]*)\"$")
 	public void the_user_performs_request_with_multivalue_params(String p1, String p2, String p3, String app_id) throws Throwable {
 	    
-		response= given().param("bbox",p1,p2,p3).param("appid",app_id)
-				.when().get(baseURI).then();
+		 response= given().param("bbox",p1,p2,p3).param("appid",app_id)
+				.when().get("http://samples.openweathermap.org/data/2.5/box/city").then();
+		
+		
 	}
 	
 	@Then("^the response includes the following$")
