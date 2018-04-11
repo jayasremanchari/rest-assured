@@ -57,7 +57,7 @@ public class Steps {
 
 	}
 	
-	@Then("^the Code Returned is (\\d+)$")
+	@Then("^the Code Returned is \"([^\"]*)\"$")
 	public void the_Code_Returned_is(int status_code)  {
 	    postTest.ValidateStatusCode(status_code);
 	}
@@ -103,7 +103,7 @@ public void the_response_includes_the_following_in_any_order(Map<String,String> 
 	
 }
 
-@Then("^the body includes the following$")
+@Then("^the body includes the following \"([^\"]*)\"$")
 public void the_body_includes_the_following(List<String> element) throws Throwable {
   
 	postTest.elementPresent(element);

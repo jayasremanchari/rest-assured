@@ -59,7 +59,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 501021556,
+  "duration": 494501024,
   "status": "passed"
 });
 formatter.scenario({
@@ -104,7 +104,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 3002172552,
+  "duration": 3540775922,
   "status": "passed"
 });
 formatter.match({
@@ -117,7 +117,7 @@ formatter.match({
   "location": "Steps.the_user_performs_get_request_to(String)"
 });
 formatter.result({
-  "duration": 775209735,
+  "duration": 1148932174,
   "status": "passed"
 });
 formatter.match({
@@ -130,7 +130,7 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 4691511,
+  "duration": 4599053,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -265,7 +265,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 154096,
+  "duration": 151630,
   "status": "passed"
 });
 formatter.scenario({
@@ -388,7 +388,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 760978228,
+  "duration": 1019419825,
   "status": "passed"
 });
 formatter.match({
@@ -405,7 +405,7 @@ formatter.match({
   "location": "Steps.the_user_performs_getparam_request_with(String,String)"
 });
 formatter.result({
-  "duration": 472860569,
+  "duration": 505286117,
   "status": "passed"
 });
 formatter.match({
@@ -418,28 +418,28 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 2158991,
+  "duration": 1039636,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_header_includes_the_following(String,String\u003e)"
 });
 formatter.result({
-  "duration": 30092738,
+  "duration": 9843668,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_response_includes_the_following(String,String\u003e)"
 });
 formatter.result({
-  "duration": 775513407,
+  "duration": 890460168,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_response_includes_the_following_in_any_order(String,String\u003e)"
 });
 formatter.result({
-  "duration": 55970633,
+  "duration": 51865099,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -550,7 +550,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 143413,
+  "duration": 162725,
   "status": "passed"
 });
 formatter.scenario({
@@ -646,7 +646,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 742083151,
+  "duration": 725204065,
   "status": "passed"
 });
 formatter.match({
@@ -671,7 +671,7 @@ formatter.match({
   "location": "Steps.the_user_performs_request_with_multivalue_params(String,String,String,String)"
 });
 formatter.result({
-  "duration": 602706588,
+  "duration": 567043785,
   "status": "passed"
 });
 formatter.match({
@@ -684,14 +684,14 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 1769847,
+  "duration": 2728531,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_response_includes_the_following(String,String\u003e)"
 });
 formatter.result({
-  "duration": 152944019,
+  "duration": 136409697,
   "status": "passed"
 });
 formatter.uri("post.feature");
@@ -704,9 +704,9 @@ formatter.feature({
 });
 formatter.scenarioOutline({
   "line": 7,
-  "name": "Register Details to \"https://reqres.in/\"",
+  "name": "Valid Register to \"https://reqres.in/api/register\"",
   "description": "",
-  "id": "post-action-test;register-details-to-\"https://reqres.in/\"",
+  "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\"",
   "type": "scenario_outline",
   "keyword": "Scenario Outline",
   "tags": [
@@ -728,56 +728,63 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "the Code Returned is 201",
+  "name": "the Code Returned is \"\u003ccode\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "the body includes the following",
-  "rows": [
-    {
-      "cells": [
-        "token"
-      ],
-      "line": 13
-    }
-  ],
+  "name": "the body includes the following \"\u003cfield\u003e\"",
   "keyword": "And "
 });
 formatter.examples({
   "line": 15,
   "name": "",
   "description": "",
-  "id": "post-action-test;register-details-to-\"https://reqres.in/\";",
+  "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\";",
   "rows": [
     {
       "cells": [
         "email",
-        "pass"
+        "pass",
+        "code",
+        "field"
       ],
       "line": 16,
-      "id": "post-action-test;register-details-to-\"https://reqres.in/\";;1"
+      "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\";;1"
     },
     {
       "cells": [
         "Sydney@hmail",
-        "nabprep"
+        "nabprep",
+        "201",
+        "token"
       ],
       "line": 17,
-      "id": "post-action-test;register-details-to-\"https://reqres.in/\";;2"
+      "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\";;2"
+    },
+    {
+      "cells": [
+        "Sydney@hmail",
+        "",
+        "400",
+        "error",
+        ""
+      ],
+      "line": 18,
+      "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\";;3"
     }
   ],
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 78075,
+  "duration": 89992,
   "status": "passed"
 });
 formatter.scenario({
   "line": 17,
-  "name": "Register Details to \"https://reqres.in/\"",
+  "name": "Valid Register to \"https://reqres.in/api/register\"",
   "description": "",
-  "id": "post-action-test;register-details-to-\"https://reqres.in/\";;2",
+  "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\";;2",
   "type": "scenario",
   "keyword": "Scenario Outline",
   "tags": [
@@ -803,19 +810,17 @@ formatter.step({
 });
 formatter.step({
   "line": 11,
-  "name": "the Code Returned is 201",
+  "name": "the Code Returned is \"201\"",
+  "matchedColumns": [
+    2
+  ],
   "keyword": "Then "
 });
 formatter.step({
   "line": 12,
-  "name": "the body includes the following",
-  "rows": [
-    {
-      "cells": [
-        "token"
-      ],
-      "line": 13
-    }
+  "name": "the body includes the following \"token\"",
+  "matchedColumns": [
+    3
   ],
   "keyword": "And "
 });
@@ -829,7 +834,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 855108846,
+  "duration": 1132088016,
   "status": "passed"
 });
 formatter.match({
@@ -846,27 +851,137 @@ formatter.match({
   "location": "Steps.the_user_performs_posts_request_with(String,String)"
 });
 formatter.result({
-  "duration": 707131246,
+  "duration": 704908151,
   "status": "passed"
 });
 formatter.match({
   "arguments": [
     {
       "val": "201",
-      "offset": 21
+      "offset": 22
     }
   ],
   "location": "Steps.the_Code_Returned_is(int)"
 });
 formatter.result({
-  "duration": 3096718,
+  "duration": 8262025,
   "status": "passed"
 });
 formatter.match({
+  "arguments": [
+    {
+      "val": "token",
+      "offset": 33
+    }
+  ],
   "location": "Steps.the_body_includes_the_following(String\u003e)"
 });
 formatter.result({
-  "duration": 75919318,
+  "duration": 68047260,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 76020,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 18,
+  "name": "Valid Register to \"https://reqres.in/api/register\"",
+  "description": "",
+  "id": "post-action-test;valid-register-to-\"https://reqres.in/api/register\";;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@PostTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 9,
+  "name": "the api is up and running for \"https://reqres.in\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 10,
+  "name": "the user performs posts request with \"Sydney@hmail\"\"\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "the Code Returned is \"400\"",
+  "matchedColumns": [
+    2
+  ],
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "the body includes the following \"error\"",
+  "matchedColumns": [
+    3
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://reqres.in",
+      "offset": 31
+    }
+  ],
+  "location": "Steps.the_api_is_up_and_running_for(String)"
+});
+formatter.result({
+  "duration": 669299590,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sydney@hmail",
+      "offset": 38
+    },
+    {
+      "val": "",
+      "offset": 52
+    }
+  ],
+  "location": "Steps.the_user_performs_posts_request_with(String,String)"
+});
+formatter.result({
+  "duration": 768626744,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "400",
+      "offset": 22
+    }
+  ],
+  "location": "Steps.the_Code_Returned_is(int)"
+});
+formatter.result({
+  "duration": 1528224,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "error",
+      "offset": 33
+    }
+  ],
+  "location": "Steps.the_body_includes_the_following(String\u003e)"
+});
+formatter.result({
+  "duration": 23171555,
   "status": "passed"
 });
 });
