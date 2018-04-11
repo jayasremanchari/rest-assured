@@ -25,7 +25,7 @@ Scenario Outline: Get the weather details using query params
 	And the header includes the following
 	| content-type | application/json; charset=utf-8 |
 	| content-encoding | gzip |
-	| server | openresty/1.9.7.1 |
+	
 	
 	And the response includes the following
 	| id | 2643743 |

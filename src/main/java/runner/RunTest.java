@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class) 
-@CucumberOptions(features="Features",glue={"stepDefinitions"},tags={"@GetTest"},
+@CucumberOptions(features="Features",glue={"stepDefinitions"},tags={"@GetTest,@PostTest"},
 				plugin={"pretty","html:target/cucumber-reports"})		
 public class RunTest {
 

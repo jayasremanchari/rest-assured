@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("getCustDetails.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("get.feature");
 formatter.feature({
   "line": 1,
   "name": "Get Action Test",
@@ -59,7 +59,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 412770429,
+  "duration": 501021556,
   "status": "passed"
 });
 formatter.scenario({
@@ -104,7 +104,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 2727178962,
+  "duration": 3002172552,
   "status": "passed"
 });
 formatter.match({
@@ -117,7 +117,7 @@ formatter.match({
   "location": "Steps.the_user_performs_get_request_to(String)"
 });
 formatter.result({
-  "duration": 850953178,
+  "duration": 775209735,
   "status": "passed"
 });
 formatter.match({
@@ -130,7 +130,7 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 1500281,
+  "duration": 4691511,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -179,13 +179,6 @@ formatter.step({
         "gzip"
       ],
       "line": 27
-    },
-    {
-      "cells": [
-        "server",
-        "openresty/1.9.7.1"
-      ],
-      "line": 28
     }
   ],
   "keyword": "And "
@@ -272,7 +265,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 50544,
+  "duration": 154096,
   "status": "passed"
 });
 formatter.scenario({
@@ -325,13 +318,6 @@ formatter.step({
         "gzip"
       ],
       "line": 27
-    },
-    {
-      "cells": [
-        "server",
-        "openresty/1.9.7.1"
-      ],
-      "line": 28
     }
   ],
   "keyword": "And "
@@ -402,7 +388,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 1161387672,
+  "duration": 760978228,
   "status": "passed"
 });
 formatter.match({
@@ -419,7 +405,7 @@ formatter.match({
   "location": "Steps.the_user_performs_getparam_request_with(String,String)"
 });
 formatter.result({
-  "duration": 744118454,
+  "duration": 472860569,
   "status": "passed"
 });
 formatter.match({
@@ -432,28 +418,28 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 697337,
+  "duration": 2158991,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_header_includes_the_following(String,String\u003e)"
 });
 formatter.result({
-  "duration": 9489863,
+  "duration": 30092738,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_response_includes_the_following(String,String\u003e)"
 });
 formatter.result({
-  "duration": 755741420,
+  "duration": 775513407,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_response_includes_the_following_in_any_order(String,String\u003e)"
 });
 formatter.result({
-  "duration": 74150293,
+  "duration": 55970633,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -564,7 +550,7 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 94102,
+  "duration": 143413,
   "status": "passed"
 });
 formatter.scenario({
@@ -660,7 +646,7 @@ formatter.match({
   "location": "Steps.the_api_is_up_and_running_for(String)"
 });
 formatter.result({
-  "duration": 879904781,
+  "duration": 742083151,
   "status": "passed"
 });
 formatter.match({
@@ -685,7 +671,7 @@ formatter.match({
   "location": "Steps.the_user_performs_request_with_multivalue_params(String,String,String,String)"
 });
 formatter.result({
-  "duration": 542662471,
+  "duration": 602706588,
   "status": "passed"
 });
 formatter.match({
@@ -698,14 +684,189 @@ formatter.match({
   "location": "Steps.the_Status_Code_is(int)"
 });
 formatter.result({
-  "duration": 1274684,
+  "duration": 1769847,
   "status": "passed"
 });
 formatter.match({
   "location": "Steps.the_response_includes_the_following(String,String\u003e)"
 });
 formatter.result({
-  "duration": 160243250,
+  "duration": 152944019,
+  "status": "passed"
+});
+formatter.uri("post.feature");
+formatter.feature({
+  "line": 1,
+  "name": "Post Action Test",
+  "description": "Description: This feature will post data to a URL and test the output",
+  "id": "post-action-test",
+  "keyword": "Feature"
+});
+formatter.scenarioOutline({
+  "line": 7,
+  "name": "Register Details to \"https://reqres.in/\"",
+  "description": "",
+  "id": "post-action-test;register-details-to-\"https://reqres.in/\"",
+  "type": "scenario_outline",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@PostTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 9,
+  "name": "the api is up and running for \"https://reqres.in\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 10,
+  "name": "the user performs posts request with \"\u003cemail\u003e\"\"\u003cpass\u003e\"",
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "the Code Returned is 201",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "the body includes the following",
+  "rows": [
+    {
+      "cells": [
+        "token"
+      ],
+      "line": 13
+    }
+  ],
+  "keyword": "And "
+});
+formatter.examples({
+  "line": 15,
+  "name": "",
+  "description": "",
+  "id": "post-action-test;register-details-to-\"https://reqres.in/\";",
+  "rows": [
+    {
+      "cells": [
+        "email",
+        "pass"
+      ],
+      "line": 16,
+      "id": "post-action-test;register-details-to-\"https://reqres.in/\";;1"
+    },
+    {
+      "cells": [
+        "Sydney@hmail",
+        "nabprep"
+      ],
+      "line": 17,
+      "id": "post-action-test;register-details-to-\"https://reqres.in/\";;2"
+    }
+  ],
+  "keyword": "Examples"
+});
+formatter.before({
+  "duration": 78075,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 17,
+  "name": "Register Details to \"https://reqres.in/\"",
+  "description": "",
+  "id": "post-action-test;register-details-to-\"https://reqres.in/\";;2",
+  "type": "scenario",
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "line": 6,
+      "name": "@PostTest"
+    }
+  ]
+});
+formatter.step({
+  "line": 9,
+  "name": "the api is up and running for \"https://reqres.in\"",
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 10,
+  "name": "the user performs posts request with \"Sydney@hmail\"\"nabprep\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 11,
+  "name": "the Code Returned is 201",
+  "keyword": "Then "
+});
+formatter.step({
+  "line": 12,
+  "name": "the body includes the following",
+  "rows": [
+    {
+      "cells": [
+        "token"
+      ],
+      "line": 13
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "https://reqres.in",
+      "offset": 31
+    }
+  ],
+  "location": "Steps.the_api_is_up_and_running_for(String)"
+});
+formatter.result({
+  "duration": 855108846,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Sydney@hmail",
+      "offset": 38
+    },
+    {
+      "val": "nabprep",
+      "offset": 52
+    }
+  ],
+  "location": "Steps.the_user_performs_posts_request_with(String,String)"
+});
+formatter.result({
+  "duration": 707131246,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "201",
+      "offset": 21
+    }
+  ],
+  "location": "Steps.the_Code_Returned_is(int)"
+});
+formatter.result({
+  "duration": 3096718,
+  "status": "passed"
+});
+formatter.match({
+  "location": "Steps.the_body_includes_the_following(String\u003e)"
+});
+formatter.result({
+  "duration": 75919318,
   "status": "passed"
 });
 });
